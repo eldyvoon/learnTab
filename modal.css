@@ -1,0 +1,47 @@
+ #success_msg_learnTab .modal-wrap-learnTab:before {
+    content:'' !important;
+    display:none !important;
+    background:transparent !important;
+    position:fixed !important;
+    top:0 !important;
+    right:0 !important;
+    bottom:0 !important;
+    left:0 !important;
+    z-index:999997 !important;
+}
+.modal-overlay-learnTab {
+    background-color: #333 !important;
+    opacity: 0.8 !important;
+    display:none !important;
+    position:fixed !important;
+    top:0 !important;
+    right:0 !important;
+    bottom:0 !important;
+    left:0 !important;
+    z-index:999998 !important;
+}
+.modal-open-learnTab:checked ~ .modal-wrap-learnTab:before, .modal-open-learnTab:checked ~ .modal-wrap-learnTab .modal-overlay-learnTab {
+    display:block !important;
+}
+#success_msg_learnTab .modal-open-learnTab:checked ~  .modal-wrap-learnTab .modal-dialog-learnTab {
+    transform:translate(-50%, -50%) !important;
+    position:fixed !important;
+    top:40% !important;
+    border: 1px solid #DDD;
+}
+#success_msg_learnTab .modal-dialog-learnTab {
+    background:#fefefe !important;
+    border-radius:5px !important;
+    position:fixed !important;
+    left:50% !important;
+    top:-100% !important;
+    transform:translate(-50%, -150%) !important;
+    transition:transform .2s !important;
+    max-width:600px !important;
+    z-index:999999 !important;
+    padding: 10px !important;
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 14px !important;
+} 
+
