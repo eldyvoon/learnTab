@@ -1,5 +1,5 @@
 # learnTab
-learnTab 
+Learn better by saving things you want to remember into your new tab.
 
 https://chrome.google.com/webstore/detail/learntab/oooikkgbnogcfalmnncbjbhajhfmhajk
 
