@@ -26,7 +26,7 @@ chrome.runtime.onInstalled.addListener(function(details){
 			    }else{
 
 			    	var getMaxId = (Math.max.apply(Math, obj.LearnTab.map(function(o){ return o.id }))) + 1;
-			    	
+			    	if(getMaxId == NaN){getMaxId = 1};
 
 			    	var buildObj = {"id":getMaxId,"content":content,"ref":ref};
 			    	obj.LearnTab.push(buildObj);

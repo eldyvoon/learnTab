@@ -43,8 +43,10 @@ function getItem(){
 
 					var LearnTabArr = $.grep(obj.LearnTab, function(e){ 
 				     return e.id != selectedId; 
-				     
 					});
+					console.log(LearnTabArr)
+					var toSave = {"LearnTab":LearnTabArr};
+					chrome.storage.sync.set(toSave);
 
 					window.location.reload();
 				});

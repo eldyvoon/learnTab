@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "LearnTab",
-  "version": "1.4",
+  "version": "1.5",
   "description": "Learn better by saving the things you want to remember using LearnTab.",
   "background" : { "scripts": ["jquery.js","script.js"] },
   "chrome_url_overrides" : {
